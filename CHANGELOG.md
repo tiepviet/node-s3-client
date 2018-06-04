@@ -1,3 +1,7 @@
+### 4.5.2
+
+* Update dependencies
+
 ### 4.4.0
 
  * Export aws-sdk dependency
