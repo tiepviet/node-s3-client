@@ -1,8 +1,12 @@
 # High Level Amazon S3 Client
 
+## Notice
+
+This repository is forked to fix some security issues on https://github.com/andrewrk/node-s3-client
+
 ## Installation
 
-`npm install s3 --save`
+`npm install s3-client-control --save`
 
 ## Features
 
@@ -27,7 +31,7 @@ s3cmd: [s3-cli](https://github.com/andrewrk/node-s3-cli).
 ### Create a client
 
 ```js
-var s3 = require('s3');
+var s3 = require('s3-client-control');
 
 var client = s3.createClient({
   maxAsyncS3: 20,     // this is the default
@@ -50,7 +54,7 @@ var client = s3.createClient({
 ### Create a client from existing AWS.S3 object
 
 ```js
-var s3 = require('s3');
+var s3 = require('s3-client-control');
 var awsS3Client = new AWS.S3(s3Options);
 var options = {
   s3Client: awsS3Client,
@@ -616,7 +620,7 @@ Using the AWS SDK, you can send a HEAD request, which will tell you if a file ex
 See http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#headObject-property
 
 ```js
-var client = require('s3').createClient({ /* options */ });
+var client = require('s3-client-control').createClient({ /* options */ });
 client.s3.headObject({
   Bucket: 's3 bucket name',
   Key: 'some/remote/file'
