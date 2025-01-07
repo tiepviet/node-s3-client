@@ -1,6 +1,6 @@
 {
   "name": "s3-client-control",
-  "version": "4.5.2",
+  "version": "4.5.3",
   "description": "high level amazon s3 client. upload and download files and directories. (This repository is forked to fix some security issues in https://github.com/andrewrk/node-s3-client)",
   "main": "lib/index.js",
   "scripts": {
@@ -30,16 +30,16 @@
     "node": ">=0.10.20"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "ncp": "~1.0.1"
+    "mocha": "^11.0.1",
+    "ncp": "~2.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.250.1",
+    "aws-sdk": "^2.1692.0",
     "fd-slicer": "~1.0.0",
     "findit2": "~2.2.3",
-    "graceful-fs": "~4.1.4",
-    "mime-types": "^2.1.18",
-    "mkdirp": "~0.5.0",
+    "graceful-fs": "~4.2.11",
+    "mime-types": "^2.1.35",
+    "mkdirp": "~0.5.6",
     "pend": "~1.2.0",
     "rimraf": "~2.2.8",
     "streamsink": "~1.2.0"
